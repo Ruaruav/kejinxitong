@@ -55,7 +55,7 @@ Yonghu Regist(int n)
 	x.jingyan = 0;
 
 
-	Save(x);
+	Save_a(x);
 	
 	
 
