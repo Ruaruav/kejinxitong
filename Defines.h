@@ -1,3 +1,7 @@
+#ifndef Defines
+#define Defines 
+
+
 #define LL long long
 #include <bits/stdc++.h>
 struct Date
@@ -11,11 +15,11 @@ struct Yonghu
 	long long id;//8位，不足补零
 	string password;//
 	int zhuangtai;
-	//0 正常 1 挂失
+	//0 正常 1 挂失 2 已注销
 	string nickname;
 	bool sex;// 0 nan 1 nv
 	Date birthday;
-	int money;
+	int money_in_sum,money_out_sum,money_now;
 	// void xiaofeijilu()
 	// {
 	// 	Find(id,1,);
@@ -26,3 +30,4 @@ struct Yonghu
 	// 100经验升1级
 	Date daoqi;
 };
+#endif
