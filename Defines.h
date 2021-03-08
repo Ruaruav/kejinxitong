@@ -5,9 +5,21 @@
 #define LL long long
 #include <bits/stdc++.h>
 
-char* id_buliong(int n)
+char* id_buliong_a(int n)
 {
-	char fl[] = "00000000";
+	char fl[] = "00000000.a";
+	int cnt=7;
+	while(n!=0)
+	{
+		fl[cnt] = n%10;
+		n/=10;
+		cnt--;
+	}
+	return fl;
+}
+char* id_buliong_b(int n)
+{
+	char fl[] = "00000000.b";
 	int cnt=7;
 	while(n!=0)
 	{
