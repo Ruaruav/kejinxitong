@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 #include "Defines.h"
 
-void Save(Yonghu x)
+void Save_a(Yonghu x)
 {
 
 	FILE  *fp = freopen(id_buliong(x).a,"w",stdout);
