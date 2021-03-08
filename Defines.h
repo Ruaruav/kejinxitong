@@ -11,7 +11,7 @@ struct Yonghu
 	long long id;//8位，不足补零
 	string password;//
 	int zhuangtai;
-	//0 正常 1 挂失 2 已注销
+	//0 正常 1 挂失
 	string nickname;
 	bool sex;// 0 nan 1 nv
 	Date birthday;
