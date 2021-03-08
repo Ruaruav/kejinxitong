@@ -37,5 +37,5 @@ void chouka()
 	//钱有正有负
 }
 
-
+void xiaofei();
 
