@@ -2,28 +2,29 @@
 #define Defines 
 
 
-#define LL long long
+//#define LL long long
+#include <cstdio>
 #include <bits/stdc++.h>
-
+using namespace std;
 char* id_buliong_a(int n)
 {
-	char fl[] = "00000000.a";
+	static char s[] = "00000000.a";
 	int cnt=7;
 	while(n!=0)
 	{
-		fl[cnt] = n%10;
+		s[cnt] = n%10+'0';
 		n/=10;
 		cnt--;
 	}
-	return fl;
+	return s;
 }
 char* id_buliong_b(int n)
 {
-	char fl[] = "00000000.b";
+	static char fl[] = "00000000.b";
 	int cnt=7;
 	while(n!=0)
 	{
-		fl[cnt] = n%10;
+		fl[cnt] = n%10+'0';
 		n/=10;
 		cnt--;
 	}
