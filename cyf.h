@@ -1,35 +1,42 @@
 #ifndef cyf
-#define cyf 
+#define cyf
 #include <bits/stdc++.h>
 #include "Defines.h"
-
+using namespace std;
 void Save_a(Yonghu x)
 {
+	cout << "jer" << endl;
+	cout << id_buliong_a(x.id) << endl;
+	ofstream fout;
+	fout.open(id_buliong_a(x.id));
 
-	FILE  *fp = freopen(id_buliong(x).a,"w",stdout);
-	cout << x.id<< endl;
-	cout << x.password<< endl;
-	cout << x.zhuangtai<< endl;
-	cout << x.nickname<< endl;
-	cout << x.sex<< endl;
-	cout << x.birthday.year << ' ' << x.birthday.month  << ' '<< x.birthday.day<< endl;
-	cout << x.money_in_sum<< endl;
-	cout << x.money_out_sum<< endl;
-	cout << x.money_now<< endl;
-	cout << x.Lv<< endl;
-	cout << x.jingyan << endl;
-	cout << x.daoqi.year << ' ' << x.daoqi.month  << ' '<< x.daoqi.day<< endl;
-	
-	fclose(fp);
 
+
+	fout << x.id<< endl;
+	fout << x.password<< endl;
+	fout << x.zhuangtai<< endl;
+	fout << x.nickname<< endl;
+	fout << x.sex<< endl;
+	fout << x.birthday.year << ' ' << x.birthday.month  << ' '<< x.birthday.day<< endl;
+	fout << x.money_in_sum<< endl;
+	fout << x.money_out_sum<< endl;
+	fout << x.money_now<< endl;
+	fout << x.Lv<< endl;
+	fout << x.jingyan << endl;
+	fout << x.daoqi.year << ' ' << x.daoqi.month  << ' '<< x.daoqi.day<< endl;
+	fout.close();
 }
 Yonghu Regist(int n)
 {
+	//setlocale(LC_CTYPE, "");
 	Yonghu x;
+	x.id = n;
 	string s;
-	printf("您将是第%d位注册用户",n);
-	printf("请输入用户名\n");
-	cin >> x.name;
+	cout <<"nmsl\n";
+	cout << "你好\n";
+	printf("您将是第%d位注册用户\n",n);
+	printf("请输入昵称：\n");
+	cin >> x.nickname;
 	printf("请输入密码:\n");
 	cin >> x.password;
 	printf("请重复密码：\n");
@@ -42,8 +49,8 @@ Yonghu Regist(int n)
 		printf("请重复密码：\n");
 		cin >> s;
 	}
-	printf("请输入昵称:\n");
-	cin >> x.nickname;
+//	printf("请输入昵称:\n");
+//	cin >> x.nickname;
 
 	printf("请输入性别，男输入0，女输入1:\n");
 
@@ -54,10 +61,9 @@ Yonghu Regist(int n)
 	x.Lv = 0;
 	x.jingyan = 0;
 
+	cout<<"ok!"<< endl;
 
-	Save_a(x);
-	
-	
+	return x;
 
 }
 
