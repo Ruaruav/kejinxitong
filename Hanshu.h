@@ -9,7 +9,7 @@ void Find();
 
 bool Login();
 //返回提示信息在函数内输出
-Yonghu Regist(int n);//返回一个用户对象，需要传入分配的id
+bool Regist();
 
 bool change();
 	// 充钱
@@ -27,6 +27,5 @@ bool Delete();
 
 void chouka();
 	//钱有正有负
-void Save_a(Yonghu x);
-//储存用户的个人信息
+
 #endif
